@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>Zep Analytics Login</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+
+<body>
+    <h2 style="font-size: 70px;
+                font-weight: 900;
+                color: white;
+                letter-spacing: 3px;
+                margin-top: 0%;
+                margin-left: 500px;">ZEP ANALYTICS
+    </h2>
+    <div id="frm">
+        <h1>Create Account</h1>
+<form action="welcome_get.php" method="get">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+<!-- _SERVER["PHP_SELF"] returns the filename of the currently executing script.
+htmlspecialchars() function converts special characters to HTML entities.-->
+    FirstName: <input type="text" name="firstname" required="">
+    <br><br>
+    LastName: <input type="text" name="lastname" required="">
+    <br><br>
+    UserName: <input type="text" name="username" required="">
+    <br><br>
+    E-mail: <input type="email" name="email" required="">
+    <br><br>
+    Password <input type="password" name="password" required="">
+    <br><br>
+    Confirm Password <input type="password" name="passwordConfirm" required="">
+    <br><br>
+    <input type="submit">
+</form>
+</div>
+</body>
+
